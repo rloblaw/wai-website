@@ -33,39 +33,6 @@ jobs:
         gem install bundler
         bundle install --jobs 4 --retry 3
         bundle exec jekyll build --config "_config.yml,_config_prod.yml" --profile
-# Only works for pushes to PRs and that is not useful for our approach.
-#    - name: calibreapp/image-actions
-#      uses: docker://calibreapp/github-image-actions
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Zip Files
-      uses: montudor/action-zip@v0.1.0
-      with:
-        args: zip -r build.zip ./_site
-    - name: Upload zip file to release
-      uses: svenstaro/upload-release-action@v1-release
-      with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: build.zip
-        asset_name: build.zip
-        tag: ${{ github.ref }}
-        overwrite: true
-    # - name: Check Links
-    #   uses: peter-evans/link-checker@v1.0.0
-    #   with:
-    #     args: -v -d https://www.w3.org/ -r _site
-    # - name: Upload link check report to release
-    #   uses: svenstaro/upload-release-action@v1-release
-    #   with:
-    #     repo_token: ${{ secrets.GITHUB_TOKEN }}
-    #     file: ./link-checker/out.md
-    #     asset_name: link-report.md
-    #     tag: ${{ github.ref }}
-    #     overwrite: true
-    # - name: Create Issue From File
-    #   uses: peter-evans/create-issue-from-file@v1.0.1
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     ISSUE_TITLE: Link Checker Report
-    #     ISSUE_CONTENT_FILEPATH: ./link-checker/out.md
-    #     ISSUE_LABELS: report, automated issue
+    - name: Generate list of resources to stdout
+      run: |
+        find ./_site -type f
