@@ -1,3 +1,4 @@
+./_site/index.html
 ./_site/bar.html
 ./_site/manifest.txt
 ./_site/foo.txt
