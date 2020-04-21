@@ -28,11 +28,16 @@ jobs:
         branch: master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Build and test with Jekyll
+#    - name: Build and test with Jekyll
+#      run: |
+#        gem install bundler
+#        bundle install --jobs 4 --retry 3
+#        bundle exec jekyll build --config "_config.yml,_config_prod.yml" --profile
+    - name: generate fake site for quicker testing
       run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
-        bundle exec jekyll build --config "_config.yml,_config_prod.yml" --profile
+        mkdir ./_site
+        echo "this is foo.txt" > ./_site/foo.txt
+        echo "<p>this is bar.html</p>" > ./_site/bar.html
     - name: Generate list of resources to manifest.txt
       run: |
         find ./_site -type f > ./_site/manifest.txt
