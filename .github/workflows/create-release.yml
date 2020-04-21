@@ -38,6 +38,7 @@ jobs:
         mkdir ./_site
         echo "this is foo.txt" > ./_site/foo.txt
         echo "<p>this is bar.html</p>" > ./_site/bar.html
+        echo "<p>this is index.html</p>" > ./_site/index.html
     - name: Generate list of resources to manifest.txt
       run: |
         find ./_site -type f > ./_site/manifest.txt
