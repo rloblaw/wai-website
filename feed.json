@@ -13,6 +13,48 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2020-03-19/RAUR/",
+            "title": "For Review: RTC Accessibility User Requirements (RAUR) First Draft",
+            "summary": null,
+            "content_text": "The First Public Working Draft of the Working Group Note RTC Accessibility User Requirements (RAUR) is now available for review. RAUR outlines user needs, requirements, and scenarios for real-time communication (RTC) to be accessible to people with disabilities. Accessible telecommunication technology is increasingly important for people who are working remotely and relying on RTC for daily needs. The purpose of this document is to inform the development of specifications and underlying architecture at W3C and beyond. Some of the requirements apply at the system or platform level, and some are authoring requirements. We would particularly like input on any user needs or requirements that are missing from this draft. For more information, see the blog post RTC Accessibility User Requirements – Call for Review.",
+            "content_html": "<p>The First Public Working Draft of the Working Group Note <a href=\"https://www.w3.org/TR/RAUR/\">RTC Accessibility User Requirements (RAUR)</a> is now available for review. RAUR outlines user needs, requirements, and scenarios for real-time communication (RTC) to be accessible to people with disabilities. Accessible telecommunication technology is increasingly important for people who are working remotely and relying on RTC for daily needs. The purpose of this document is to inform the development of specifications and underlying architecture at W3C and beyond. Some of the requirements apply at the system or platform level, and some are authoring requirements. We would particularly like input on any user needs or requirements that are missing from this draft. For more information, see the blog post <a href=\"https://www.w3.org/blog/2020/03/rtc-accessibility-user-requirements-call-for-review/\">RTC Accessibility User Requirements – Call for Review</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2020-03-19/RAUR/",
+            
+            
+            
+            
+            
+            "date_published": "2020-03-19T00:00:00+00:00",
+            "date_modified": "2020-03-19T00:00:00+00:00",
+            
+                "author": 
+                "w3c_wai"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2020-03-10/pronunciation/",
+            "title": "For Review: Pronunciation of Text-To-Speech (TTS) Working Drafts",
+            "summary": null,
+            "content_text": "New drafts of Working Group Notes are available for review: Explainer: Improving Spoken Presentation on the Web and Pronunciation Gap Analysis and Use Cases. These documents will guide work on a normative specification to enable content authors to ensure that text-to-speech (TTS) synthesis properly pronounces HTML content. We would particularly like input on additional use cases and requirements not described in these documents; and any aspects of the analysis that are missing, incorrect, or insufficiently defined. For context of this work, please see the Pronunciation Overview.",
+            "content_html": "<p>New drafts of Working Group Notes are available for review: <a href=\"https://www.w3.org/TR/pronunciation-explainer/\">Explainer: Improving Spoken Presentation on the Web</a> and <a href=\"https://www.w3.org/TR/pronunciation-gap-analysis-and-use-cases/\">Pronunciation Gap Analysis and Use Cases</a>. These documents will guide work on a normative specification to enable content authors to ensure that text-to-speech (TTS) synthesis properly pronounces HTML content. We would particularly like input on additional use cases and requirements not described in these documents; and any aspects of the analysis that are missing, incorrect, or insufficiently defined. For context of this work, please see the <a href=\"https://www.w3.org/WAI/pronunciation/\">Pronunciation Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2020-03-10/pronunciation/",
+            
+            
+            
+            
+            
+            "date_published": "2020-03-10T00:00:00+00:00",
+            "date_modified": "2020-03-10T00:00:00+00:00",
+            
+                "author": 
+                "w3c_wai"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2020-02-27/wcag-2-2/",
             "title": "Notice: Web Content Accessibility Guidelines (WCAG) 2.2 in Development",
             "summary": null,
@@ -26,6 +68,27 @@
             
             "date_published": "2020-02-27T00:00:00+00:00",
             "date_modified": "2020-02-27T00:00:00+00:00",
+            
+                "author": 
+                "w3c_wai"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2020-02-13/XAUR/",
+            "title": "For Review: XR Accessibility User Requirements (XAUR) First Draft",
+            "summary": null,
+            "content_text": "The First Public Working Draft of the Working Group Note XR Accessibility User Requirements (XAUR) is now available for review. The XAUR document describes the needs of people with disabilities in virtual or immersive environments (XR). It includes requirements for XR to be accessible. XAUR is for designers and developers who are involved in creating XR experiences. It is also useful for anyone who wants to better understand XR accessibility. We would particularly like input on any user needs or requirements that are missing from this draft. For more information, see the blog post XR Accessibility User Requirements – call for review.",
+            "content_html": "<p>The First Public Working Draft of the Working Group Note <a href=\"https://www.w3.org/TR/xaur/\">XR Accessibility User Requirements (XAUR)</a> is now available for review. The XAUR document describes the needs of people with disabilities in virtual or immersive environments (XR). It includes requirements for XR to be accessible. XAUR is for designers and developers who are involved in creating XR experiences. It is also useful for anyone who wants to better understand XR accessibility. We would particularly like input on any user needs or requirements that are missing from this draft. For more information, see the blog post <a href=\"https://www.w3.org/blog/2020/03/xr-accessibility-user-requirements-call-for-review/\">XR Accessibility User Requirements – call for review</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2020-02-13/XAUR/",
+            
+            
+            
+            
+            
+            "date_published": "2020-02-13T00:00:00+00:00",
+            "date_modified": "2020-02-13T00:00:00+00:00",
             
                 "author": 
                 "w3c_wai"
@@ -698,69 +761,6 @@
             
             "date_published": "2018-03-29T00:00:00+00:00",
             "date_modified": "2018-03-29T00:00:00+00:00",
-            
-                "author": 
-                "w3c_wai"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2018-03-20/wide-review-accessible-name-desc-computation/",
-            "title": "For Wide Review: Accessible Name and Description Computation",
-            "summary": null,
-            "content_text": "The ARIA WG has published a wide review draft of Accessible Name and Description Computation 1.1. This document describes how user agents determine the names and descriptions of accessible objects, where information comprising that name can come from various characteristics of the content, in order to lead to a consistent result across implementations. The document previously included Accessibility API Mappings, which have been moved to Core Accessibility API Mappings, so this document only describes the procedure to determine accessible name and description, not how to expose it. Please comment by 13 April 2018.",
-            "content_html": "<p>The ARIA WG has published a wide review draft of <a href=\"https://www.w3.org/TR/accname-1.1/\">Accessible Name and Description Computation 1.1</a>. This document describes how user agents determine the names and descriptions of accessible objects, where information comprising that name can come from various characteristics of the content, in order to lead to a consistent result across implementations. The document previously included Accessibility API Mappings, which have been moved to Core Accessibility API Mappings, so this document only describes the procedure to determine accessible name and description, not how to expose it. Please comment by <strong>13 April 2018</strong>.</p>",
-            "url": "https://www.w3.org/WAI/news/2018-03-20/wide-review-accessible-name-desc-computation/",
-            
-            
-            
-            
-            
-            "date_published": "2018-03-20T00:00:00+00:00",
-            "date_modified": "2018-03-20T00:00:00+00:00",
-            
-                "author": 
-                "w3c_wai"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2018-03-13/personalization-explainer-content-update/",
-            "title": "For Review: Personalization Semantics Explainer and Content module updated",
-            "summary": null,
-            "content_text": "The ARIA WG has published an updated draft of Personalization Semantics Explainer 1.0 and Personalization Semantics Content Module 1.0. The explainer adds a Vocabulary Identification section, does some changes in sections of WAI-ARIA and HTML Microdata, also replaces the RDFa section with editor’s note. The Content module removes aui prefixes from property names, changes some examples and adds some editor’s note in the document. Please comment by 13 April 2018.",
-            "content_html": "<p>The ARIA WG has published an updated draft of <a href=\"https://www.w3.org/TR/personalization-semantics-1.0/\">Personalization Semantics Explainer 1.0</a> and <a href=\"https://www.w3.org/TR/personalization-semantics-content-1.0/\">Personalization Semantics Content Module 1.0</a>. The explainer adds a Vocabulary Identification section, does some changes in sections of WAI-ARIA and HTML Microdata, also replaces the RDFa section with editor’s note. The Content module removes aui prefixes from property names, changes some examples and adds some editor’s note in the document. Please comment by <strong>13 April 2018</strong>.</p>",
-            "url": "https://www.w3.org/WAI/news/2018-03-13/personalization-explainer-content-update/",
-            
-            
-            
-            
-            
-            "date_published": "2018-03-13T00:00:00+00:00",
-            "date_modified": "2018-03-13T00:00:00+00:00",
-            
-                "author": 
-                "w3c_wai"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2018-03-03/act-rules-format-1-wd/",
-            "title": "For Review: ACT Rules Format 1.0 Working Draft",
-            "summary": null,
-            "content_text": "An updated Working Draft of Accessibility Conformance Testing (ACT) Rules Format is available for review. This draft addresses all comments received on the previous draft. Most importantly, the “Selector” approach was replaced with “Applicability” and “Expectation” pairs, to make ACT Rules less procedural. This draft is accompanied by sample ACT Rules that implement this rules format. Please submit any comments, especially comments related to implementation experience, as soon as possible, before 5 April 2018.",
-            "content_html": "<p>An updated Working Draft of <a href=\"https://www.w3.org/TR/act-rules-format-1.0/\">Accessibility Conformance Testing (ACT) Rules Format</a> is available for review. This draft addresses all comments received on the previous draft. Most importantly, the “Selector” approach was replaced with “Applicability” and “Expectation” pairs, to make ACT Rules less procedural. This draft is accompanied by <a href=\"https://w3c.github.io/wcag-act-rules/\">sample ACT Rules</a> that implement this rules format. Please submit any comments, especially comments related to implementation experience, as soon as possible, before <strong>5 April 2018</strong>.</p>",
-            "url": "https://www.w3.org/WAI/news/2018-03-03/act-rules-format-1-wd/",
-            
-            
-            
-            
-            
-            "date_published": "2018-03-03T00:00:00+00:00",
-            "date_modified": "2018-03-03T00:00:00+00:00",
             
                 "author": 
                 "w3c_wai"

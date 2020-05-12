@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1587499441806343282";
+      element.src = "/WAI/assets/scripts/main.js?1589251430454145348";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1587499441806343282">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1589251430454145348">
 
 <title> Pronunciation Overview | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.6.1 -->
 <meta name="generator" content="Jekyll v3.8.5" />
@@ -126,13 +126,13 @@
     <header>
       <h1>Pronunciation Overview</h1></header><aside class="box"><header class="box-h "> Summary</header><div class="box-i">
 
-<p>This page introduces work on pronunciation. The goal is to provide normative specifications and best practices guidance so that text to speech (TTS) synthesis can provide proper pronunciation of HTML content.</p>
+<p>This page introduces work on pronunciation. The goal is to provide normative specifications and best practices guidance so that text-to-speech (TTS) synthesis can provide proper pronunciation of HTML content.</p>
 
 <p>Quick links to initial analysis documents:</p>
 <ul>
-  <li><a href="https://www.w3.org/TR/pronunciation-user-scenarios/">Pronunciation User Scenarios - Working Draft</a></li>
-  <li><a href="https://www.w3.org/TR/pronunciation-use-cases/">Pronunciation Use Cases - Working Draft</a></li>
-  <li><a href="https://www.w3.org/TR/pronunciation-gap-analysis/">Pronunciation Gap Analysis - Working Draft</a></li>
+  <li><a href="https://www.w3.org/TR/pronunciation-explainer/">Explainer: Improving Spoken Presentation on the Web <em>(Working Draft Note)</em></a></li>
+  <li><a href="https://www.w3.org/TR/pronunciation-user-scenarios/">Pronunciation User Scenarios <em>(Working Draft Note)</em></a></li>
+  <li><a href="https://www.w3.org/TR/pronunciation-gap-analysis-and-use-cases/">Pronunciation Gap Analysis and Use Cases <em>(Working Draft Note)</em></a></li>
 </ul>
 
 </div></aside>
@@ -148,9 +148,10 @@
 
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#explainer-and-user-scenarios" id="markdown-toc-explainer-and-user-scenarios">Explainer and User Scenarios</a></li>
   <li><a href="#exploring-technical-solutions" id="markdown-toc-exploring-technical-solutions">Exploring Technical Solutions</a></li>
-  <li><a href="#status-of-the-work" id="markdown-toc-status-of-the-work">Status of the Work</a></li>
   <li><a href="#who-develops-the-pronunciation-documents" id="markdown-toc-who-develops-the-pronunciation-documents">Who Develops the Pronunciation Documents</a></li>
+  <li><a href="#contributing-to-the-work" id="markdown-toc-contributing-to-the-work">Contributing to the Work</a></li>
 </ul>
 
 
@@ -164,31 +165,53 @@
 
 <p>Most people who are blind rely on specialized text-to-speech (TTS) software called screen readers. Some people with cognitive disabilities who have difficulty processing written text also use screen readers.</p>
 
-<p>Text-to-speech is essential for people with disabilities and useful for all. Many computers and mobile devices today have built in text-to-speech functionality that is used by people without disabilities in different situations, such as when they lose their glasses or their eyes are tired.</p>
+<p>Text-to-speech is essential for people with disabilities and useful for all. Accurate pronunciation is essential in many situations, such as education and assessment (testing students). Many computers and mobile devices today have built in text-to-speech functionality that is used by people without disabilities in different situations, such as when they lose their glasses or their eyes are tired.</p>
 
 <p>Currently text-to-speech pronunciation is often inaccurate and inconsistent because of technology limitations. For example, incorrect pronunciation based on context, regional variation, or emphasis.</p>
 
-<p>Accurate pronunciation is essential in many situations, such as education and assessment (testing students). To learn more, see <a href="https://www.w3.org/TR/pronunciation-user-scenarios/">Pronunciation User Scenarios</a>.</p>
+<p>W3C is working toward developing normative specifications and best practices guidance so that text-to-speech (TTS) synthesis can provide proper pronunciation of HTML content. The documents below provide the foundation for this work.</p>
+
+<h2 id="explainer-and-user-scenarios">Explainer and User Scenarios</h2>
+
+<p><strong><a href="https://www.w3.org/TR/pronunciation-explainer/">Explainer: Improving Spoken Presentation on the Web</a></strong> provides an overview of the work. It:</p>
+
+<ul>
+  <li>Briefly introduces the context for W3C work on pronunciation</li>
+  <li>Describes the advantages and disadvantages of two approaches</li>
+  <li>Poses questions for additional input</li>
+</ul>
+
+<p><strong><a href="https://www.w3.org/TR/pronunciation-user-scenarios/">Pronunciation User Scenarios</a></strong> provides examples of:</p>
+<ul>
+  <li>End-users, including screen reader users</li>
+  <li>Content providers, including educators</li>
+  <li>Software developers, including content managements systems</li>
+</ul>
 
 <h2 id="exploring-technical-solutions">Exploring Technical Solutions</h2>
 
-<p>The Pronunciation Task Force has been exploring technical options for content authors to provide pronunciation information. A challenge is developing a solution that will be used by screen readers. Analysis of technical options is being documented in <a href="https://www.w3.org/TR/pronunciation-use-cases/">Pronunciation Use Cases</a>.</p>
+<p>The Pronunciation Task Force has been exploring technical options for content authors to provide pronunciation information. A challenge is developing a solution that will be used by screen readers. One aspect of that work is analyzing how required features for accurate pronunciation are covered in existing technical specifications, including HTML5.</p>
 
-<p>One aspect of that work is analyzing how required features for accurate pronunciation are covered in existing technical specifications and if they are currently covered in the HTML specification. This is being documented in <a href="https://www.w3.org/TR/pronunciation-gap-analysis/">Pronunciation Gap Analysis</a>.</p>
-
-<h2 id="status-of-the-work">Status of the Work</h2>
-
-<p>The documents linked above are in-progress Working Drafts that provide the foundation for future normative specifications and best practices guidance. The Task Force plans to publish regular updates.</p>
-
-<p>You can follow current work from the <a href="https://github.com/w3c/pronunciation/wiki">Pronunciation Task Force wiki in GitHub</a>.</p>
+<p><strong><a href="https://www.w3.org/TR/pronunciation-gap-analysis-and-use-cases/">Pronunciation Gap Analysis and Use Cases</a></strong> provides details on the analysis. It:</p>
+<ul>
+  <li>Provides more detailed context</li>
+  <li>Describes required features for pronunciation and spoken presentation</li>
+  <li>Describes specific implementation approaches for introducing presentation authoring markup into HTML5 (called “use cases”)</li>
+  <li>Provides a gap analysis</li>
+  <li>Describes how the required features may be met by existing approaches</li>
+</ul>
 
 <h2 id="who-develops-the-pronunciation-documents">Who Develops the Pronunciation Documents</h2>
 
 <p>Pronunciation documents are developed by the <a href="https://www.w3.org/WAI/APA/task-forces/pronunciation/">Pronunciation Task Force</a> of the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Working Group (APA WG)</a>, which is part of the World Wide Web Consortium (<a href="http://www.w3.org">W3C</a>) Web Accessibility Initiative (<a href="http://www.w3.org/WAI/">WAI</a>). For more information about the Task Force, see the <a href="https://www.w3.org/WAI/APA/task-forces/pronunciation/">Pronunciation Task Force page</a>.</p>
 
-<p><a href="http://www.w3.org/WAI/intro/w3c-process">How WAI Develops Accessibility Guidelines through the W3C Process: Milestones and Opportunities to Contribute</a> describes formal periods for public review. To get notifications of drafts for review, see <a href="https://www.w3.org/WAI/news/subscribe/">Get WAI News</a> for links to WAI tweets, RSS feed, and WAI Interest Group (WAI IG) emails. An email address for sending comments on the pronunciation documents is included in the “Status of this Document” section.</p>
+<h2 id="contributing-to-the-work">Contributing to the Work</h2>
 
 <p>Opportunities for contributing to Pronunciation and other WAI work are introduced in <a href="https://www.w3.org/WAI/about/participating/">Participating in WAI</a>.</p>
+
+<p>To get notifications of drafts for review, see <a href="https://www.w3.org/WAI/news/subscribe/">Get WAI News</a> for links to WAI tweets, RSS feed, and WAI Interest Group (WAI IG) emails. An email address for sending comments on the pronunciation documents is included in the “Status of this Document” sections.</p>
+
+<p>If you are interested in becoming a participant of the Pronunciation Task Force or have questions regarding its work, e-mail <a href="mailto:iali@ets.org?CC=ran@w3.org&amp;Subject=Personalization%20Task%20Force">Irfan Ali (Task Force Facilitator) and Roy Ran (W3C Contact)</a>.</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Pronunciation%20Overview">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -206,7 +229,7 @@
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner">
-      <p><strong>Date:</strong> Updated 11 September 2019.</p> <p><strong>Editors:</strong> <a href="http://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and <a href="http://www.w3.org/People/roy/">Ruoxi Ran</a>.</p> <p>Developed with input from the <a href="https://www.w3.org/WAI/APA/task-forces/pronunciation/">Pronunciation Task Force</a>.<p>
+      <p><strong>Date:</strong> Update 27 April 2020.</p> <p><strong>Editors:</strong> <a href="http://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and <a href="http://www.w3.org/People/roy/">Ruoxi Ran</a>.</p> <p>Developed with input from the <a href="https://www.w3.org/WAI/APA/task-forces/pronunciation/">Pronunciation Task Force</a>.<p>
 </div>
   </footer>
   
@@ -242,9 +265,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1587499441806343282"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1589251430454145348"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1587499441806343282"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1589251430454145348"></script>
 <script>
   svg4everybody();
 </script><script>
