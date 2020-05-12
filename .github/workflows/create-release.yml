@@ -21,7 +21,7 @@ jobs:
     - name: Update Externals
       run: |
         git submodule update --remote
-    - name: commit changed files
+    - name: Commit changed files
       uses: stefanzweifel/git-auto-commit-action@v2.1.0
       with:
         commit_message: Apply automatic changes
@@ -33,10 +33,10 @@ jobs:
         gem install bundler
         bundle install --jobs 4 --retry 3
         bundle exec jekyll build --config "_config.yml,_config_prod.yml" --profile
-    - name: Generate list of resources to manifest.txt
+    - name: Generate list of resources
       run: |
-        find ./_site -type f > ./_site/manifest.txt
-    - name: deploy
+        ( find ./_site -type f -not -name '*.php'; find ./_site -type f -name index.html | sed 's,/index.html,/,'; find ./_site -type f -name index.html | sed 's,/index.html,,' ) | sed 's,^\.\/_site,/WAI,' | sort > ./_site/manifest.txt
+    - name: Publish to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
